@@ -1,0 +1,64 @@
+body{
+    background-color: #02022f;
+}
+.main{
+    background-color: snow;
+    height:800px;
+    width:600px;
+    margin: 30px auto 0px auto;
+    border-radius:10px;
+}
+.main_head{
+    color:#0606ce;
+    font-size:1.4em;
+    font-weight: bold;
+    text-align:center;
+text-shadow: 1px 1px 1px grey;
+
+}
+.logo{
+    text-align:center;
+    
+}
+.tcel1{
+    width:20%;
+}
+.tcel2{
+    width:40%;
+}
+.tcel3{
+    width:20%;
+    }
+ .tcel4{
+    width:20%;
+     }
+.t2cel1{
+    width:70%;
+    
+}
+.t2ce12{
+    width:20%;
+    
+
+}
+.t2cel3{
+    width:20%;
+    
+}
+span{
+    color:green;
+    text-shadow: 1px 0px 0px grey;
+}
+p{
+    color:#0606ce;
+    text-shadow: 1px 0px 0px grey;
+    
+}
+.data{
+    padding:30px;
+}
+.side{
+    margin-top:80px;
+    float:right;
+    padding:20px;
+}
