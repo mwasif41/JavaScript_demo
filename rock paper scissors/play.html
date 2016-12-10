@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissor</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+</head>
+<body>
+    <div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+    <div class="name-header">
+        <div style="float:right;" id="score">
+            <span id="wins"> Win = 0 </span> 
+            <span id="loses"> Lose = 0 </span>
+            
+        </div>
+        name :<script>document.write(" "+p1+"  ");</script>
+    </div>
+    <div class="main-body">
+        
+        <div class="title">
+            <div class="head-rock" style="font-size:30px;">ROCK</div>
+            <div class="head-paper" style="font-size:30px;">PAPER</div>
+            <div class="head-scissor" style="font-size:30px;">SCISSOR</div>
+        </div>
+        <button id="myBtn" class="main-btn" style="margin-left:41%;" >Select Object</button>
+        <div id="selectModal" class="modal">
+            <div class="modal-content">
+                <div class="header">  
+                    <span class="head">Select Your Object</span>
+                    <span class="close" >x</span>
+                 </div>
+                   <div>
+                       <table class="tab">
+                           <tr>
+                               <td>
+                     <img src="images/rock.png" alt="" onclick="objectSelect(1)"  width="150px" height="150px">
+                               </td>
+                               <td>
+                    <img src="images/paper.png" alt="" onclick="objectSelect(2)"  width="150px" height="150px">
+                               </td>
+                               <td>
+                    <img src="images/scissor.png" alt="" onclick="objectSelect(3)"  width="150px" height="150px">
+                               </td>
+                           </tr>
+                           <tr>
+                               <td class="op" > ROCK </td>
+                               <td class="op"> PAPER </td>
+                               <td class="op"> SCISSOR </td>
+                           </tr>
+                       </table>
+                  </div>             
+            </div>
+        </div>
+   
+    <div id="area" class="arena">
+        
+    </div>
+   
+    </div>
+    
+   
+</body>
+<script>
+    var modal = document.getElementById('selectModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+
+</script>
+
+</html>

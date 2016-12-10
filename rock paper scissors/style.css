@@ -1,0 +1,182 @@
+body{
+    margin:0px;
+}
+/*     FOR ALERT BOX       */
+#dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
+/*////////////////*/
+
+.title{
+text-align: center;
+font-family: 'Permanent Marker', cursive;
+}
+.head-rock{
+
+    font-size:70px;
+    color: brown;
+    font-weight: bold;
+}
+.head-paper{
+    font-size:70px;
+    color: silver;
+    font-weight: bold;
+}
+.head-scissor{
+    font-size:70px;
+    color: navy;
+    font-weight: bold;
+}
+.main-btn{
+    margin: 20px;
+    outline: none; /*to remove outlines when clicked*/
+padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+    color: #fff;
+  background-color: #319fdc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.main-btn:hover {
+    background-color: #156c9c;
+    }
+.main-btn:active{
+      background-color: #156c9c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px); /*transform button 4px down in y axis*/
+}
+.menu{
+    margin: 0px auto;
+    width:30%;
+    padding: 30px;
+    margin-left: 550px;
+}
+
+.modal{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    top:0px;
+    
+    margin: 0px auto;
+      background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */ 
+     display: none;
+
+}
+.modal-content{
+    background-color: white;
+    margin: 150px auto;
+    width: 60%;
+     border: 1px solid #888;
+     height: 500px;
+     box-shadow: 2px 2px 5px grey;
+}
+.close{
+    /*position: relative;
+    top:-38px;
+    left: 800px;
+    background-color: black;
+    border-radius: 50%;
+    color:grey;
+     font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    */
+    float:right;
+     font-size: 28px;
+    color:grey;
+    margin-right: 10px;
+    
+}
+.close:hover{
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 2px black;
+    cursor: pointer;
+}
+.header{
+    width:100%;
+    height:50px;
+    background-color: black;
+    color: white;
+
+}
+.head{
+    font-size:30px;
+    font-weight: bold;
+    padding:10px;
+    margin-top: 5px;
+}
+.tab{
+    width:100%;
+    padding:30px;
+}
+.op{
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+}
+td >img:hover{
+    height: 200px;
+    width: 200px;
+}
+.name-header{
+    width:100%;
+background-color: black;
+color:white;
+font-weight: bold;
+font-family: 'Permanent Marker', cursive;
+height: 50px;
+font-size: 30px;
+text-transform: uppercase;
+z-index: 1;
+}
+.main-body{
+    background-color: #f0eeeb;
+    margin: 0px auto;
+    width: 70%;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px 0px grey;
+}
+.arena{
+    width:80%;
+    border:2px solid #fff;
+    padding:10px;
+    margin: 0px auto 20px auto;
+    background-color: #f0eeeb;
+    box-shadow: 2px 2px 6px black;
+    border-radius:20px;
+}
+.vs{
+    font-size:40px;
+    color:red;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    padding:10px;
+}
